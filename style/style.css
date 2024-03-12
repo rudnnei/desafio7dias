@@ -1,0 +1,70 @@
+@import url("reset.css");
+@import url("/style/secao-informacoes-perfil.css");
+@import url("/style/navbar.css");
+@import url("/style/destaques.css");
+@import url("/style/atividades.css");
+@import url("/style/sobre.css");
+@import url("/style/experiencias.css");
+@import url("/style/formacao.css");
+@import url("/style/idiomas.css");
+@import url("/style/sugestoes.css");
+
+body{
+  background-color: var(--fundo-escuro);
+}
+
+a{
+  color: var(--primario);
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+main > div{
+  display: flex;
+  flex-direction: column;
+}
+main > .perfil{
+  align-items: flex-end;
+  margin-right: 1.5rem;
+}
+
+main > .sugestoes{
+  align-items: flex-start;
+}
+
+.botao-primario{
+  background-color: var(--primario);
+}
+
+.botao-secundario{
+  background: transparent;
+  color: var(--primario);
+  border: 1px solid var(--primario);
+}
+
+@media(max-width: 1024px){
+  main{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main > .sugestoes, main > .perfil{
+    align-items: center;
+    margin-right: 0;
+  }
+}

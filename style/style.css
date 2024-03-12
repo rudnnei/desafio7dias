@@ -62,6 +62,7 @@ main > .sugestoes{
   main{
     flex-direction: column;
     justify-content: flex-start;
+    margin: auto;
   }
   main > .sugestoes, main > .perfil{
     align-items: center;
